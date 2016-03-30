@@ -29,8 +29,8 @@ capitals = {'Alabama': 'Montgomery', 'Alaska': 'Juneau', 'Arizona': 'Phoenix',
 #       2. instead of creating quiz and answer files in the current working directory, create a folder titled 'quizzes' and another folder titled 'answers'.
 #       3. place the randomly-generated quizzes in the 'quizzes' directory.
 #       4. plaec the corresponding answers in the 'answers' directory.
-os.makedirs(os.path.join('.','quizzes'))
-os.makedirs(os.path.join('.','answers'))
+os.makedirs(os.path.join('quizzes'))
+os.makedirs(os.path.join('answers'))
 
 for quizNum in range(5):
     quizFile = open(os.path.join('quizzes','capitalsquiz%s.txt' % (quizNum + 1)), 'w')
